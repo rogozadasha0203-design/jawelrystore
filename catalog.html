@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталог — AURELIA</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">
+    AURELIA — маленькі деталі, які мають значення
+    <span>Безкоштовна доставка від 2500 ₴</span>
+  </div>
+
+  <header class="header">
+    <a class="logo" href="index.html">AURELIA<span>JEWELRY STUDIO</span></a>
+    <nav class="nav">
+      <a href="catalog.html">КАТАЛОГ</a>
+      <a href="index.html#collections">КОЛЕКЦІЇ</a>
+      <a href="index.html#about">ПРО НАС</a>
+      <a href="index.html#care">ДОГЛЯД</a>
+      <a href="index.html#contacts">КОНТАКТИ</a>
+    </nav>
+    <div class="header-actions">
+      <button id="searchBtn" aria-label="Пошук">⌕</button>
+      <button aria-label="Обране">♡ <span id="favoriteCount">0</span></button>
+      <a href="form.html" aria-label="Кошик">♧ <span id="cartCount">0</span></a>
+    </div>
+  </header>
+
+  <main class="catalog-main">
+    <div class="catalog-intro">
+      <p class="eyebrow">AURELIA JEWELRY STUDIO</p>
+      <h1>Знайди свою прикрасу</h1>
+      <p>
+        Позачасові форми, теплі відтінки та деталі, які говорять замість слів.
+        Обирай те, що відгукується саме тобі.
+      </p>
+    </div>
+
+    <div class="catalog-tools">
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">Усі прикраси</button>
+        <button class="filter-btn" data-filter="earrings">Сережки</button>
+        <button class="filter-btn" data-filter="necklaces">Кольє</button>
+        <button class="filter-btn" data-filter="rings">Каблучки</button>
+        <button class="filter-btn" data-filter="bracelets">Браслети</button>
+      </div>
+
+      <select id="sortSelect" aria-label="Сортування">
+        <option value="featured">Спочатку рекомендовані</option>
+        <option value="low">Від дешевших до дорожчих</option>
+        <option value="high">Від дорожчих до дешевших</option>
+      </select>
+    </div>
+
+    <div class="catalog-grid">
+      <article class="product-card" data-category="earrings" data-price="1490">
+        <div class="product-photo">
+          <span class="tag">БЕСТСЕЛЕР</span>
+          <button class="heart">♡</button>
+          <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=800&q=85" alt="Сережки Luna">
+        </div>
+        <div class="product-info"><div><h3>Сережки Luna</h3><p>Позолочене срібло</p></div><strong>₴ 1 490</strong></div>
+        <button class="add-cart">Додати до кошика <span>＋</span></button>
+      </article>
+
+      <article class="product-card" data-category="necklaces" data-price="1890">
+        <div class="product-photo">
+          <span class="tag tag-light">НОВИНКА</span>
+          <button class="heart">♡</button>
+          <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=800&q=85" alt="Кольє Sol">
+        </div>
+        <div class="product-info"><div><h3>Кольє Sol</h3><p>Сталь із золотим покриттям</p></div><strong>₴ 1 890</strong></div>
+        <button class="add-cart">Додати до кошика <span>＋</span></button>
+      </article>
+
+      <article class="product-card" data-category="rings" data-price="1250">
+        <div class="product-photo">
+          <button class="heart">♡</button>
+          <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=800&q=85" alt="Каблучка Mira">
+        </div>
+        <div class="product-info"><div><h3>Каблучка Mira</h3><p>Срібло 925</p></div><strong>₴ 1 250</strong></div>
+        <button class="add-cart">Додати до кошика <span>＋</span></button>
+      </article>
+
+      <article class="product-card" data-category="bracelets" data-price="1650">
+        <div class="product-photo">
+          <span class="tag">LIMITED</span>
+          <button class="heart">♡</button>
+          <img src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?auto=format&fit=crop&w=800&q=85" alt="Браслет Aura">
+        </div>
+        <div class="product-info"><div><h3>Браслет Aura</h3><p>Позолочена сталь</p></div><strong>₴ 1 650</strong></div>
+        <button class="add-cart">Додати до кошика <span>＋</span></button>
+      </article>
+
+      <article class="product-card" data-category="earrings" data-price="1390">
+        <div class="product-photo">
+          <button class="heart">♡</button>
+          <img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=800&q=85" alt="Сережки Eden">
+        </div>
+        <div class="product-info"><div><h3>Сережки Eden</h3><p>Мінімалістичний дизайн</p></div><strong>₴ 1 390</strong></div>
+        <button class="add-cart">Додати до кошика <span>＋</span></button>
+      </article>
+
+      <article class="product-card" data-category="necklaces" data-price="2150">
+        <div class="product-photo">
+          <span class="tag tag-light">НОВИНКА</span>
+          <button class="heart">♡</button>
+          <img src="https://images.unsplash.com/photo-1611652022320-7c8c7a1d7f90?auto=format&fit=crop&w=800&q=85" alt="Ланцюжок Alba">
+        </div>
+        <div class="product-info"><div><h3>Ланцюжок Alba</h3><p>Позолочене покриття</p></div><strong>₴ 2 150</strong></div>
+        <button class="add-cart">Додати до кошика <span>＋</span></button>
+      </article>
+
+      <article class="product-card" data-category="rings" data-price="1750">
+        <div class="product-photo">
+          <button class="heart">♡</button>
+          <img src="https://images.unsplash.com/photo-1603561596112-0a132b757442?auto=format&fit=crop&w=800&q=85" alt="Каблучка Solis">
+        </div>
+        <div class="product-info"><div><h3>Каблучка Solis</h3><p>Срібло 925</p></div><strong>₴ 1 750</strong></div>
+        <button class="add-cart">Додати до кошика <span>＋</span></button>
+      </article>
+
+      <article class="product-card" data-category="bracelets" data-price="1990">
+        <div class="product-photo">
+          <button class="heart">♡</button>
+          <img src="https://images.unsplash.com/photo-1611594623935-3e1e4c1c5b18?auto=format&fit=crop&w=800&q=85" alt="Браслет Line">
+        </div>
+        <div class="product-info"><div><h3>Браслет Line</h3><p>Сталь із золотим покриттям</p></div><strong>₴ 1 990</strong></div>
+        <button class="add-cart">Додати до кошика <span>＋</span></button>
+      </article>
+
+      <article class="product-card" data-category="earrings" data-price="1590">
+        <div class="product-photo">
+          <button class="heart">♡</button>
+          <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=800&q=85" alt="Сережки Nova">
+        </div>
+        <div class="product-info"><div><h3>Сережки Nova</h3><p>Лаконічні форми</p></div><strong>₴ 1 590</strong></div>
+        <button class="add-cart">Додати до кошика <span>＋</span></button>
+      </article>
+
+      <article class="product-card" data-category="necklaces" data-price="2290">
+        <div class="product-photo">
+          <button class="heart">♡</button>
+          <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=800&q=85" alt="Кольє Stella">
+        </div>
+        <div class="product-info"><div><h3>Кольє Stella</h3><p>Акцентний ланцюжок</p></div><strong>₴ 2 290</strong></div>
+        <button class="add-cart">Додати до кошика <span>＋</span></button>
+      </article>
+
+      <article class="product-card" data-category="rings" data-price="1450">
+        <div class="product-photo">
+          <button class="heart">♡</button>
+          <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=800&q=85" alt="Каблучка Aura">
+        </div>
+        <div class="product-info"><div><h3>Каблучка Aura</h3><p>Срібло 925</p></div><strong>₴ 1 450</strong></div>
+        <button class="add-cart">Додати до кошика <span>＋</span></button>
+      </article>
+
+      <article class="product-card" data-category="bracelets" data-price="1790">
+        <div class="product-photo">
+          <button class="heart">♡</button>
+          <img src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?auto=format&fit=crop&w=800&q=85" alt="Браслет Muse">
+        </div>
+        <div class="product-info"><div><h3>Браслет Muse</h3><p>М'який золотий блиск</p></div><strong>₴ 1 790</strong></div>
+        <button class="add-cart">Додати до кошика <span>＋</span></button>
+      </article>
+    </div>
+
+    <div class="catalog-footer">
+      <h2>Не знаєш, що обрати?</h2>
+      <p>Напиши нам — допоможемо знайти прикрасу, яка пасуватиме саме тобі.</p>
+      <a href="index.html#contacts" class="button button-dark">Зв’язатися з нами ↗</a>
+    </div>
+  </main>
+
+  <footer class="footer" id="contacts">
+    <div class="footer-top">
+      <div class="footer-brand"><a class="logo" href="index.html">AURELIA<span>JEWELRY STUDIO</span></a><p>Прикраси для твоєї історії.<br>Сяй у власному ритмі.</p></div>
+      <div><h4>ПОКУПЦЯМ</h4><a href="catalog.html">Каталог</a><a href="form.html">Оформлення замовлення</a><a href="index.html#care">Догляд за прикрасами</a></div>
+      <div><h4>КОМПАНІЯ</h4><a href="index.html#about">Наша історія</a><a href="index.html#collections">Колекції</a></div>
+      <div><h4>ЗВ’ЯЗОК</h4><a href="mailto:hello@aurelia.example">hello@aurelia.example</a><p>Пн–Пт: 10:00–18:00</p></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 AURELIA JEWELRY STUDIO</span><span>Створено з увагою до деталей ♡</span><a href="index.html">На головну ↑</a></div>
+  </footer>
+
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Оформлення замовлення — AURELIA</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">
+    AURELIA — маленькі деталі, які мають значення
+    <span>Безкоштовна доставка від 2500 ₴</span>
+  </div>
+
+  <header class="header">
+    <a class="logo" href="index.html">AURELIA<span>JEWELRY STUDIO</span></a>
+    <nav class="nav">
+      <a href="catalog.html">КАТАЛОГ</a>
+      <a href="index.html#collections">КОЛЕКЦІЇ</a>
+      <a href="index.html#about">ПРО НАС</a>
+      <a href="index.html#care">ДОГЛЯД</a>
+      <a href="index.html#contacts">КОНТАКТИ</a>
+    </nav>
+    <div class="header-actions"><a href="catalog.html">＋</a></div>
+  </header>
+
+  <main class="order-main">
+    <div class="order-head">
+      <p class="eyebrow">ТВОЄ ЗАМОВЛЕННЯ</p>
+      <h1>Майже твоє.</h1>
+      <p>Заповни форму — і ми підготуємо наступний крок.</p>
+    </div>
+
+    <div class="order-layout">
+      <section class="order-panel">
+        <h2>Дані покупця</h2>
+
+        <form id="orderForm" class="order-form">
+          <label>
+            Ім’я та прізвище
+            <input name="name" required placeholder="Як до тебе звертатися?">
+          </label>
+
+          <label>
+            Номер телефону
+            <input name="phone" type="tel" required placeholder="+380 __ ___ __ __">
+          </label>
+
+          <label>
+            Електронна пошта
+            <input name="email" type="email" placeholder="name@example.com">
+          </label>
+
+          <label>
+            Місто та відділення доставки
+            <input name="delivery" required placeholder="Місто, номер відділення">
+          </label>
+
+          <label>
+            Прикраса, яка тебе зацікавила
+            <select name="product">
+              <option>Сережки Luna</option>
+              <option>Кольє Sol</option>
+              <option>Каблучка Mira</option>
+              <option>Браслет Aura</option>
+              <option>Інша прикраса</option>
+            </select>
+          </label>
+
+          <label>
+            Коментар до замовлення
+            <textarea name="comment" placeholder="Розмір, побажання до пакування тощо"></textarea>
+          </label>
+
+          <button class="button button-dark" type="submit">
+            Надіслати демо-замовлення <span>↗</span>
+          </button>
+        </form>
+
+        <p class="demo-note">
+          Демо-форма для навчального проєкту: дані нікуди не надсилаються,
+          оплата не проводиться.
+        </p>
+      </section>
+
+      <aside class="order-summary">
+        <p class="eyebrow">AURELIA SERVICE</p>
+        <h2>Турбота від першого кліку</h2>
+        <p>
+          Ми хочемо, щоб вибір прикраси був приємним і спокійним —
+          від перегляду каталогу до моменту, коли відкриєш пакування.
+        </p>
+
+        <div class="summary-line">
+          <span>Пакування подарункове</span>
+          <strong>₴ 0</strong>
+        </div>
+
+        <div class="summary-line">
+          <span>Доставка</span>
+          <strong>За тарифами перевізника</strong>
+        </div>
+
+        <div class="summary-line total">
+          <span>Оплата</span>
+          <strong>Після підтвердження</strong>
+        </div>
+
+        <p>
+          Потрібна порада? Напиши нам на
+          <a href="mailto:hello@aurelia.example"><u>hello@aurelia.example</u></a>.
+        </p>
+
+        <a href="catalog.html" class="text-link">Повернутися до каталогу ↗</a>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="logo" href="index.html">AURELIA<span>JEWELRY STUDIO</span></a>
+        <p>Прикраси для твоєї історії.<br>Сяй у власному ритмі.</p>
+      </div>
+
+      <div>
+        <h4>ПОКУПЦЯМ</h4>
+        <a href="catalog.html">Каталог</a>
+        <a href="index.html#care">Догляд за прикрасами</a>
+      </div>
+
+      <div>
+        <h4>КОМПАНІЯ</h4>
+        <a href="index.html#about">Наша історія</a>
+        <a href="index.html#contacts">Контакти</a>
+      </div>
+
+      <div>
+        <h4>ЗВ’ЯЗОК</h4>
+        <a href="mailto:hello@aurelia.example">hello@aurelia.example</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 AURELIA JEWELRY STUDIO</span>
+      <a href="index.html">На головну ↑</a>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
